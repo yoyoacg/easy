@@ -8,10 +8,15 @@
         "packagist": {
             "type": "composer",
             "url": "https://packagist.laravel-china.org"
+        },
+        "yoyo/redis": {
+            "type": "vcs",
+            "url": "https://github.com/yoyoacg/redis.git"
         }
     },
     "require": {
         "easyswoole/easyswoole": "3.x-dev",
-        "easyswoole/mysqli": "^1.1"
+        "easyswoole/mysqli": "^1.1",
+        "yoyo/redis": "dev-master"
     }
 }
