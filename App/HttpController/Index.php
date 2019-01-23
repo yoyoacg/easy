@@ -18,8 +18,8 @@ class Index extends Controller
     {
         $redis = PoolManager::getInstance()
             ->getPool(RedisPool::class)
-            ->gcObject(Config::getInstance()->getConf('REDIS.POOL_TIME_OUT'));
-        $redis->set('kk','test');
+            ->getObj(Config::getInstance()->getConf('REDIS.POOL_TIME_OUT'));
+        $redis->set('kk',12346578952356);
         $test = $redis->get('kk');
         var_dump($test);
 //        $this->response()->write($conf_interface->getConf());
