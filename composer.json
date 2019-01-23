@@ -11,6 +11,7 @@
         }
     },
     "require": {
-        "easyswoole/easyswoole": "3.x-dev"
+        "easyswoole/easyswoole": "3.x-dev",
+        "easyswoole/mysqli": "^1.1"
     }
 }

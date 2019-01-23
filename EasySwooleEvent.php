@@ -9,6 +9,9 @@
 namespace EasySwoole\EasySwoole;
 
 
+use App\Utility\Pool\MysqlPool;
+use App\Utility\Pool\RedisPool;
+use EasySwoole\Component\Pool\PoolManager;
 use EasySwoole\EasySwoole\Swoole\EventRegister;
 use EasySwoole\EasySwoole\AbstractInterface\Event;
 use EasySwoole\Http\Request;
@@ -24,6 +27,10 @@ class EasySwooleEvent implements Event
         date_default_timezone_set('Asia/Shanghai');
         /***加载自定义配置**/
         self::loadConf();
+        /**注册mysql 链接池**/
+        PoolManager::getInstance()->register(MysqlPool::class,Config::getInstance()->getConf('MYSQL.POOL_MAX_NUM'));
+        /***注册redis 链接池***/
+        PoolManager::getInstance()->register(RedisPool::class);
 
 
     }
