@@ -22,6 +22,10 @@ class EasySwooleEvent implements Event
     {
         // TODO: Implement initialize() method.
         date_default_timezone_set('Asia/Shanghai');
+        /***加载自定义配置**/
+        self::loadConf();
+
+
     }
 
     public static function loadConf(){
@@ -31,7 +35,7 @@ class EasySwooleEvent implements Event
                 $fileNameArr = explode('.', $file);
                 $fileSuffix = end($fileNameArr);
                 if ($fileSuffix == 'php') {
-                    Config::getInstance()->loadFile($file);//引入之后,文件名自动转为小写,成为配置的key
+                    Config::getInstance()->loadFile($file,true);//引入之后,文件名自动转为小写,成为配置的key
                 }
             }
         }
