@@ -22,6 +22,7 @@ return [
     'REDIS'=>[
         'host'          => '127.0.0.1',
         'port'          => '6379',
+        'select'        => 1,
         'auth'          => '19940702yu',
         'POOL_MAX_NUM'  => '20',
         'POOL_MIN_NUM'  => '5',
