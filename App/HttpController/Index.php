@@ -7,13 +7,16 @@
  */
 namespace App\HttpController;
 
+use EasySwoole\EasySwoole\Config;
 use EasySwoole\Http\AbstractInterface\Controller;
 
 class Index extends Controller
 {
     public function index()
     {
-        $this->response()->write('hello');
+        $conf_interface = Config::getInstance();
+        $this->response()->write($conf_interface->getConf());
+
     }
 
 }
