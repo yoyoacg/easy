@@ -12,6 +12,10 @@ class ComposerStaticInit50a7e68c29f2b0dbb53756e7d41721c7
     );
 
     public static $prefixLengthsPsr4 = array (
+        'r' => 
+        array (
+            'redis\\' => 6,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Util\\' => 22,
@@ -53,6 +57,10 @@ class ComposerStaticInit50a7e68c29f2b0dbb53756e7d41721c7
     );
 
     public static $prefixDirsPsr4 = array (
+        'redis\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yoyo/redis/src',
+        ),
         'Symfony\\Polyfill\\Util\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-util',

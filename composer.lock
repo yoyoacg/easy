@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "572fb978532ac81ec59ac1d18f858cdf",
+    "content-hash": "91750cffb31eeb35095271cedd57bc36",
     "packages": [
         {
             "name": "dragonmantank/cron-expression",
@@ -116,16 +116,16 @@
         },
         {
             "name": "easyswoole/component",
-            "version": "1.4.12",
+            "version": "1.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/component.git",
-                "reference": "a1884668b9d18ffe44f912bb9ab142bd65488cf4"
+                "reference": "475d7d3e47493d1b5072572e8775ad8d24b54870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/component/zipball/a1884668b9d18ffe44f912bb9ab142bd65488cf4",
-                "reference": "a1884668b9d18ffe44f912bb9ab142bd65488cf4",
+                "url": "https://api.github.com/repos/easy-swoole/component/zipball/475d7d3e47493d1b5072572e8775ad8d24b54870",
+                "reference": "475d7d3e47493d1b5072572e8775ad8d24b54870",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -168,7 +168,7 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-01-21T11:20:04+00:00"
+            "time": "2019-01-22T14:05:26+00:00"
         },
         {
             "name": "easyswoole/easyswoole",
@@ -176,12 +176,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/easyswoole.git",
-                "reference": "4da5a0ed9540e4b6e2b0bd92edbe64ca3674bc2f"
+                "reference": "a743c5af2ba25a2d6a8402859e17300b55063322"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/easyswoole/zipball/4da5a0ed9540e4b6e2b0bd92edbe64ca3674bc2f",
-                "reference": "4da5a0ed9540e4b6e2b0bd92edbe64ca3674bc2f",
+                "url": "https://api.github.com/repos/easy-swoole/easyswoole/zipball/a743c5af2ba25a2d6a8402859e17300b55063322",
+                "reference": "a743c5af2ba25a2d6a8402859e17300b55063322",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -234,7 +234,7 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-01-21T11:43:35+00:00"
+            "time": "2019-01-23T03:25:40+00:00"
         },
         {
             "name": "easyswoole/fast-cache",
@@ -290,16 +290,16 @@
         },
         {
             "name": "easyswoole/http",
-            "version": "1.2.9",
+            "version": "1.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/http.git",
-                "reference": "14f1d2230b0f8d7b301c04068d60ef9767792dac"
+                "reference": "0e6f8f8fa0d947c8548144363478801d3a501178"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/http/zipball/14f1d2230b0f8d7b301c04068d60ef9767792dac",
-                "reference": "14f1d2230b0f8d7b301c04068d60ef9767792dac",
+                "url": "https://api.github.com/repos/easy-swoole/http/zipball/0e6f8f8fa0d947c8548144363478801d3a501178",
+                "reference": "0e6f8f8fa0d947c8548144363478801d3a501178",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -343,7 +343,7 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-01-18T13:43:33+00:00"
+            "time": "2019-01-22T15:13:34+00:00"
         },
         {
             "name": "easyswoole/mysqli",
@@ -971,13 +971,53 @@
                 "shim"
             ],
             "time": "2018-09-30T16:36:12+00:00"
+        },
+        {
+            "name": "yoyo/redis",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yoyoacg/redis.git",
+                "reference": "88871341909f661d2a57f694f0cfe525478e320d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yoyoacg/redis/zipball/88871341909f661d2a57f694f0cfe525478e320d",
+                "reference": "88871341909f661d2a57f694f0cfe525478e320d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "redis\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "yoyoacg",
+                    "email": "1031060898@qq.com"
+                }
+            ],
+            "description": "This is redis collection",
+            "support": {
+                "source": "https://github.com/yoyoacg/redis/tree/master",
+                "issues": "https://github.com/yoyoacg/redis/issues"
+            },
+            "time": "2019-01-15T08:21:16+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "easyswoole/easyswoole": 20
+        "easyswoole/easyswoole": 20,
+        "yoyo/redis": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
