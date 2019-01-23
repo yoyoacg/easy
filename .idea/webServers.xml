@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="311e388d-67f5-44a6-8e74-64eb208771e4" name="easy (1)" url="http://39.108.58.15">
+        <fileTransfer host="39.108.58.15" port="22" rootFolder="/www/wwwroot/easyswool" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+    <groups>
+      <group>
+        <name>easy</name>
+        <servers>
+          <name value="easy (1)" />
+        </servers>
+      </group>
+    </groups>
+  </component>
+</project>
