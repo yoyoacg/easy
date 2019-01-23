@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91750cffb31eeb35095271cedd57bc36",
+    "content-hash": "1e560b990bffd49ab40b0efb8066cb8b",
     "packages": [
         {
             "name": "dragonmantank/cron-expression",
@@ -290,16 +290,16 @@
         },
         {
             "name": "easyswoole/http",
-            "version": "1.2.10",
+            "version": "1.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/http.git",
-                "reference": "0e6f8f8fa0d947c8548144363478801d3a501178"
+                "reference": "91c554067c8e62ae2daee8866c186d8185b72447"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/http/zipball/0e6f8f8fa0d947c8548144363478801d3a501178",
-                "reference": "0e6f8f8fa0d947c8548144363478801d3a501178",
+                "url": "https://api.github.com/repos/easy-swoole/http/zipball/91c554067c8e62ae2daee8866c186d8185b72447",
+                "reference": "91c554067c8e62ae2daee8866c186d8185b72447",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -343,7 +343,55 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-01-22T15:13:34+00:00"
+            "time": "2019-01-23T09:19:18+00:00"
+        },
+        {
+            "name": "easyswoole/http-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/http-client.git",
+                "reference": "3d8873fd0f1a342f1e86a4f14f5f80a4089b8b46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/http-client/zipball/3d8873fd0f1a342f1e86a4f14f5f80a4089b8b46",
+                "reference": "3d8873fd0f1a342f1e86a4f14f5f80a4089b8b46",
+                "shasum": ""
+            },
+            "require": {
+                "easyswoole/spl": "^1.1",
+                "easyswoole/swoole-ide-helper": "^1.2",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\HttpClient\\": "src/"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "YF",
+                    "email": "291323003@qq.com"
+                }
+            ],
+            "description": "php stander lib",
+            "homepage": "https://www.easyswoole.com/",
+            "keywords": [
+                "async",
+                "easyswoole",
+                "framework",
+                "swoole"
+            ],
+            "support": {
+                "source": "https://github.com/easy-swoole/http-client/tree/1.0.7",
+                "issues": "https://github.com/easy-swoole/http-client/issues"
+            },
+            "time": "2019-01-17T13:07:30+00:00"
         },
         {
             "name": "easyswoole/mysqli",
@@ -1017,7 +1065,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "easyswoole/easyswoole": 20,
-        "yoyo/redis": 20
+        "yoyo/redis": 20,
+        "easyswoole/http-client": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

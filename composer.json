@@ -1,7 +1,8 @@
 {
     "autoload": {
         "psr-4": {
-            "App\\": "App/"
+            "App\\": "App/",
+            "EasySwoole\\HttpClient\\": "src/"
         }
     },
     "repositories": {
@@ -12,11 +13,16 @@
         "yoyo/redis": {
             "type": "vcs",
             "url": "https://github.com/yoyoacg/redis.git"
+        },
+        "easyswoole/http-client": {
+            "type": "vcs",
+            "url": "https://github.com/easy-swoole/http-client.git"
         }
     },
     "require": {
         "easyswoole/easyswoole": "3.x-dev",
         "easyswoole/mysqli": "^1.1",
-        "yoyo/redis": "dev-master"
+        "yoyo/redis": "dev-master",
+        "easyswoole/http-client": "dev-master"
     }
 }
