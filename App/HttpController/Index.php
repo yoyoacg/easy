@@ -15,7 +15,8 @@ class Index extends Controller
     public function index()
     {
         $conf_interface = Config::getInstance();
-        $this->response()->write($conf_interface->getConf());
+        var_dump($conf_interface->getConf());
+//        $this->response()->write($conf_interface->getConf());
 
     }
 
